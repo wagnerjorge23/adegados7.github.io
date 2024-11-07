@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega dos Sete</title>
+
+    <style>
+     body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        margin: 0;
+        padding: 30px;
+     }
+
+     h1, h2 {
+        text-align: left;
+     }
+     h1 {
+        color: darkblue;
+     }
+
+     label {
+        display: block;
+        margin-top: 10px;
+     }
+
+     button {
+        margin-top: 30px;
+     }
+
+     #total-pedido {
+        font-weight: bold;
+        margin-top: 20px;
+     }
+
+     #descricao_pedido {
+        font-weight: bold;
+        font-family: monospace;
+        margin-top: 20px;
+     }
+    </style>
+
+</head>
+<body>
+    <h1>Adega dos Sete</h1>
+
+    <h2>Monte seu pedido</h2>
+    <hr>
+    <label>
+        <input type="radio" name="bebida" value="chopp" data-bebida="chopp"> Chopp Brahma (R$ 10.00)
+    </label>
+    <label>
+        <input type="radio" name="bebida" value="cerveja" data-bebida="cerveja"> Cerveja Skol (R$ 8.00)
+    </label>
+    <label>
+        <input type="radio" name="bebida" value="vinho" data-bebida="vinho"> Vinho Concha y Toro (R$ 40.00)
+    </label>
+    <label>
+        <input type="radio" name="bebida" value="whisky" data-bebida="whisky"> Whisky Johnnie Walker (R$ 120.00)
+    </label>
+    <label>
+        <input type="radio" name="bebida" value="vodka" data-bebida="vodka"> Vodka Smirnoff (R$ 50.00)
+    </label>
+    <br><br>
+    <hr>
+
+    <h2>Selecione o tamanho da bebida</h2>
+
+    <label>
+        <input type="radio" name="tamanho" value="lata" data-tamanho="lata"> Lata - 350ml
+    </label>
+    <label>
+        <input type="radio" name="tamanho" value="garrafa" data-tamanho="garrafa"> Garrafa - 600ml
+    </label>
+    <label>
+        <input type="radio" name="tamanho" value="vinho" data-tamanho="vinho"> Garrafa de Vinho - 750ml
+    </label>
+    <br><br>
+    <hr>
+
+    <h2>Ingredientes Extras</h2>
+    <label>
+        <input type="checkbox" name="extra-limao" data-extra="extra-limao"> Limão Extra +R$ 1.00
+    </label>
+    <label>
+        <input type="checkbox" name="extra-sal" data-extra="extra-sal"> Sal na borda +R$ 2.00
+    </label>
+    <br><br>
+    <hr>
+
+    <h2>Opcionais - Acompanhamentos:</h2>
+    <label>
+        <input type="checkbox" name="opcionais-amendoim" data-opcionais="opcionais-amendoim"> Amendoim
+    </label>
+    <label>
+        <input type="checkbox" name="opcionais-batata" data-opcionais="opcionais-batata"> Batata Frita
+    </label>
+    <br><br>
+    <hr>
+
+    <button>Montar Pedido</button>
+    <h2>Total do pedido:</h2>
+    <p id="total-pedido">Total do Pedido: R$: 0.00</p>
+    <br>
+    <h2>Descrição do pedido...</h2>
+    <p id="descricao-pedido">...............</p>
+    
+    <script src="./appAdega.js"></script>
+
+</body>
+</html>

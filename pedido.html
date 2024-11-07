@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Pedido</title>
+</head>
+<body>
+    <h1> Confira seu pedido </h1>
+
+    <style>
+        body{
+            font-family: monospace;
+            text-align: left;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        h1,h2{
+            text-align: left;
+            color: brown;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td{
+            border: 2px solid brown;
+            padding: 10px;
+        }
+
+
+    </style>
+
+    <table>
+        <tr>
+            <th>------ Resumo do pedido ------</th>
+        </tr>
+
+        <tr>
+            <td id="pedido-descricao"></td>
+        </tr>
+    </table>
+
+    <h2> Total do Pedido </h2>
+    <p id="pedido-total"> R$ -------</p>
+
+
+</body>
+</html>
